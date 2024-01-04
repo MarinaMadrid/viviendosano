@@ -100,18 +100,22 @@ section{
 /*PORTFOLIO*/
 .portfolio{
     height: 50em;
-    margin-bottom: 20em;
+    margin-bottom: 15em;
 }
 
 .main-portfolio{
-    display: flex;
-    flex-direction:row;
+    display: grid;
+    grid-template-areas: "figure"
+                        "text-article"
+                        "button-green";
+    grid-template-columns: repeat(4,1fr);
     text-align: center;
     margin-left: 3em;
     margin-right: 3em;
 }
 
 .text-article{
+    grid-area: text-article;
     height: 10em;
     width: 100%;
 }
@@ -124,6 +128,10 @@ section{
 
 .subtitle-portfolio {
     letter-spacing: 2px;
+}
+
+figure{
+    grid-area: figure;
 }
 
 img {
@@ -147,6 +155,11 @@ figcaption{
     margin-bottom: 3em;
     margin-right: 2em;
     margin-left: 2em;
+}
+
+.btn-article{
+    grid-area: button-green;
+    margin-top: 18vh;
 }
 
 /*FORMULARIO*/
