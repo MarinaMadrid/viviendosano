@@ -101,7 +101,7 @@ section{
 
 /*PORTFOLIO*/
 .portfolio{
-    height: 40em;
+    height: 60em;
     margin-bottom: 10em;
 }
 
@@ -142,7 +142,8 @@ figcaption{
     font-size: medium;
     line-height: 2em;
     margin-bottom: 3em;
-    margin-right: 1em;
+    margin-right: 2em;
+    margin-left: 2em;
 }
 
 /*FORMULARIO*/
