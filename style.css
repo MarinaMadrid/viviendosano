@@ -38,9 +38,6 @@ header{
 
 header a {
     text-decoration: none;
-}
-
-header a{
     margin-right: 1em;
     padding: 1em;
     border-radius: 10px;
@@ -92,17 +89,18 @@ section{
     border: 1px solid #8DCB89;
     background-color: #8DCB89;
     letter-spacing: 3px;
-    padding: 2em;
+    padding: 1.5em;
     padding-right: 3em;
     padding-left: 3em;
     border-radius: 10px;
-    font-size: 0.8em;
+    font-size: 1em;
+    font-weight: bolder;
 }
 
 /*PORTFOLIO*/
 .portfolio{
-    height: 60em;
-    margin-bottom: 10em;
+    height: 50em;
+    margin-bottom: 20em;
 }
 
 .main-portfolio{
@@ -111,6 +109,11 @@ section{
     text-align: center;
     margin-left: 3em;
     margin-right: 3em;
+}
+
+.text-article{
+    height: 10em;
+    width: 100%;
 }
 
 .title-portfolio {
@@ -124,7 +127,7 @@ section{
 }
 
 img {
-    width: 17em;
+    width: 15em;
     height: 11em;
     margin-right: 1em;
     border: 1px solid lightgray;
