@@ -1,0 +1,10 @@
+/*MEDIA QUERY*/
+@media screen and (max-width: 1020px) {
+    .main__portfolio__content {
+        @include flexbox(column); 
+
+        article {
+            width: 100%; 
+        }
+    }
+}

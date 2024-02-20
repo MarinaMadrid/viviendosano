@@ -1,238 +1,253 @@
+@charset "UTF-8";
 @import "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600";
-
-*,/*todos los elementos*/
-*::before, /*para asegurar que los elementos generados por CSS de forma dinámica también sigan estas reglas*/
+*,
+*::before,
 *::after {
   box-sizing: border-box; /* sin esta regla, el ancho y alto de un elemento se calcula sin tener en cuenta el relleno y el borde*/
-  margin: 0;  /* para garantizar que no haya márgenes o rellenos no deseados aplicados de forma predeterminada por el navegador*/
+  margin: 0; /* para garantizar que no haya márgenes o rellenos no deseados aplicados de forma predeterminada por el navegador*/
   padding: 0;
 }
 
-*{
-    color: white;
+.main__touch i,
+button {
+  cursor: pointer;
 }
 
-.get-in-touch i, button{
-    cursor: pointer;
+body, textarea {
+  font-family: "Source Sans Pro", sans-serif;
 }
 
-body, textarea{
-    font-family: 'Source Sans Pro', sans-serif;
+.main__portfolio__content,
+.portfolio__title,
+.main__touch p {
+  text-align: center;
 }
 
-header, .title{
-    background-color: #8DCB89;
+/*COLORES---------------------------------------------------------------------------------------------*/
+* {
+  color: white;
 }
 
+.main__welcome p,
+.main__portfolio p,
+footer p {
+  color: rgb(97, 97, 97);
+}
+
+.main__formulario h2 {
+  color: black;
+}
+
+.portfolio__title,
+figcaption,
+.main__formulario h6 {
+  color: rgb(36, 36, 36);
+}
+
+img,
+.main__formulario__data {
+  border: 1px solid lightgray;
+}
+
+header,
+.main__title,
+.button__green {
+  background-color: #8DCB89;
+}
+
+.first__nav {
+  background-color: #6FC06A;
+}
+
+footer,
+.main__welcome {
+  background-color: rgb(51, 51, 51);
+}
+
+/*-------------------------------------------------------------------------------------------------*/
 /*HEADER*/
-header{
-    height: 15em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+header {
+  min-height: 15em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
-
-.first-nav {
-    background-color: #6FC06A;
-}
-
 header a {
-    text-decoration: none;
-    margin-right: 1em;
-    padding: 1em;
-    border-radius: 10px;
-    padding-right: 2em;
-    padding-left: 2em;
+  text-decoration: none;
+  margin-right: 1em;
+  padding: 1em;
+  border-radius: 10px;
+  padding-right: 2em;
+  padding-left: 2em;
 }
 
 /*TITLE*/
-section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.title h2{
-    font-size: 3em;
-    margin-bottom: 0.3em;
+.main__title h2 {
+  font-size: 3em;
+  margin-bottom: 0.3em;
 }
 
-.title h6{
-    letter-spacing: 1px;
-    color: rgb(183, 227, 196);
-    font-size: medium;
-    margin-bottom: 10em;
+.main__title h6 {
+  letter-spacing: 1px;
+  color: rgb(183, 227, 196);
+  font-size: medium;
+  margin-bottom: 10em;
 }
 
 /*WELCOME*/
-.welcome{
-    background-color: rgb(51,51,51);
-    height: 40em;
+.main__welcome {
+  min-height: auto;
+  padding: 3em;
 }
 
-.welcome h2, .portfolio h2, .formulario h2, .get-in-touch h2{
-    font-size: 2.5em;
+.main__welcome h2,
+.main__portfolio h2,
+.main__formulario h2,
+.main__touch h2 {
+  font-size: 2.5em;
 }
 
-.welcome p, .portfolio p{
-    font-size: larger;
-    color: rgb(97,97,97);
-    margin-bottom: 3em;
+.main__welcome p,
+.main__portfolio p {
+  font-size: larger;
+  margin-bottom: 3em;
 }
 
-.welcome p:nth-child(3){
-    width: 75%;
+.main__welcome p:nth-child(3) {
+  min-width: 75%;
 }
 
-.button-green{
-    border: 1px solid #8DCB89;
-    background-color: #8DCB89;
-    letter-spacing: 3px;
-    padding: 1.5em;
-    padding-right: 3em;
-    padding-left: 3em;
-    border-radius: 10px;
-    font-size: 1em;
-    font-weight: bolder;
+.button__green {
+  border: 1px solid #8DCB89;
+  letter-spacing: 3px;
+  padding: 2em;
+  padding-right: 3em;
+  padding-left: 3em;
+  border-radius: 10px;
+  font-size: 0.8em;
 }
 
 /*PORTFOLIO*/
-.portfolio{
-    height: 50em;
-    margin-bottom: 15em;
+.main__portfolio {
+  max-height: auto;
+  margin-bottom: 10em;
 }
 
-.main-portfolio{
-    display: grid;
-    grid-template-areas: "figure"
-                        "text-article"
-                        "button-green";
-    grid-template-columns: repeat(4,1fr);
-    text-align: center;
-    margin-left: 3em;
-    margin-right: 3em;
+.main__portfolio__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-left: 3em;
+  margin-right: 3em;
+}
+.main__portfolio__content p {
+  font-size: medium;
+  line-height: 2em;
+  margin-bottom: 3em;
+  margin-right: 1em;
+}
+.main__portfolio__content article {
+  margin-bottom: 3em;
+}
+.main__portfolio__content img {
+  max-width: 17em;
+  max-height: 11em;
+  margin-right: 1em;
+  margin-bottom: 1em;
+}
+.main__portfolio__content figcaption {
+  font-weight: bolder;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
-.text-article{
-    grid-area: text-article;
-    height: 10em;
-    width: 100%;
+.portfolio__title {
+  margin-top: 2em;
 }
 
-.title-portfolio {
-    color: rgb(36,36,36);
-    margin-top: 2em;
-    text-align: center;
-}
-
-.subtitle-portfolio {
-    letter-spacing: 2px;
-}
-
-figure{
-    grid-area: figure;
-}
-
-img {
-    width: 15em;
-    height: 11em;
-    margin-right: 1em;
-    border: 1px solid lightgray;
-    margin-bottom: 1em;
-}
-
-figcaption{
-    font-weight: bolder;
-    color: rgb(36,36,36);
-    margin-top: 1em;
-    margin-bottom: 1em;
-}
-
-.main-portfolio p{
-    font-size: medium;
-    line-height: 2em;
-    margin-bottom: 3em;
-    margin-right: 2em;
-    margin-left: 2em;
-}
-
-.btn-article{
-    grid-area: button-green;
-    margin-top: 18vh;
+.portfolio__subtitle {
+  letter-spacing: 2px;
 }
 
 /*FORMULARIO*/
-.formulario{
-    background-color: rgb(237,237,237);
-    padding-bottom: 3em;
-    height: 50em;
+.main__formulario {
+  background-color: rgb(237, 237, 237);
+  padding-bottom: 3em;
+  min-height: 50em;
+  min-height: auto;
+}
+.main__formulario h2 {
+  margin-top: 1em;
+}
+.main__formulario h6 {
+  margin-bottom: 2.5em;
+  letter-spacing: 2px;
+  font-size: large;
+}
+.main__formulario li {
+  list-style-type: none;
+}
+.main__formulario button {
+  margin-left: 12em;
+  margin-top: 1em;
 }
 
-.formulario h2{
-    color: black;
-}
-
-.formulario h6{
-    margin-bottom: 2.5em;
-    letter-spacing: 2px;
-    color: rgb(36,36,36);
-    font-size: large;
-}
-
-.formulario li{
-    list-style-type: none;
-}
-
-.formu{
-    width: 40em;
-    border: 1px solid lightgray;
-    border-radius: 3px;
-    padding: 1em;
-    margin-bottom: 1em;
-}
-
-.formulario button {
-    margin-left: 12em;
-    margin-top: 1em;
+.main__formulario__data {
+  min-width: 40em;
+  border-radius: 3px;
+  padding: 1em;
+  margin-bottom: 1em;
 }
 
 /*GET IN TOUCH*/
-.get-in-touch{
-    background-color: rgb(231, 78, 89);
-    height: 30em;
+.main__touch {
+  background-color: rgb(231, 78, 89);
+  min-height: 30em;
 }
-
-.get-in-touch p {
-    color: rgb(240,133,130);
-    text-align: center;
-    letter-spacing: 2px;
-    margin-bottom: 3em;
+.main__touch p {
+  color: rgb(240, 133, 130);
+  letter-spacing: 2px;
+  margin-bottom: 3em;
 }
-
-.get-in-touch i{
-    padding: 1em;
-    background-color: rgb(36,36,36);
-    border-radius: 50%;
-    padding: 0.4em; /*Para el círculo*/
-    width: 1.8em; 
-    height: 1.8em;
+.main__touch i {
+  padding: 1em;
+  background-color: rgb(36, 36, 36);
+  border-radius: 50%;
+  padding: 0.4em; /*Para el círculo*/
+  min-width: 1.8em;
+  min-height: 1.8em;
 }
 
 /*FOOTER*/
-footer{
-    background-color: rgb(51,51,51);
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-height: 5em;
+}
+footer span {
+  font-weight: bolder;
+}
+
+/*MEDIA QUERY*/
+@media screen and (max-width: 1020px) {
+  .main__portfolio__content {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    height: 5em;
-}
-
-footer p{
-    color: rgb(97,97,97);
-}
-
-footer span {
-    font-weight: bolder;
-}
+  }
+  .main__portfolio__content article {
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */
