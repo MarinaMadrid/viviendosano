@@ -177,7 +177,6 @@ section{
 .main__formulario{
     background-color: map-get($colores, light-white);
     padding-bottom: 3em;
-    min-height: 50em;
     min-height: auto;
 
     h2{
@@ -206,6 +205,8 @@ section{
     padding: 1em;
     margin-bottom: 1em;
 }
+
+
 
 
 /*GET IN TOUCH*/

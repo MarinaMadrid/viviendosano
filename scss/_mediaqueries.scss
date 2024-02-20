@@ -1,5 +1,27 @@
 /*MEDIA QUERY*/
 @media screen and (max-width: 1020px) {
+    header {
+        @include flexbox(column); 
+        padding-top: 3em;
+
+        a {
+            margin-right: 0; 
+            margin-bottom: 0.5em;
+        }
+    }
+
+    .main__title{
+        padding-top: 3em;
+    }
+
+    .main__welcome h2{
+        margin-bottom: 1em;
+    }
+
+    .portfolio__subtitle, .main__formulario h6{
+        padding: 1em;
+    }
+
     .main__portfolio__content {
         @include flexbox(column); 
 

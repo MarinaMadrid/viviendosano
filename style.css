@@ -182,7 +182,6 @@ section {
 .main__formulario {
   background-color: rgb(237, 237, 237);
   padding-bottom: 3em;
-  min-height: 50em;
   min-height: auto;
 }
 .main__formulario h2 {
@@ -241,6 +240,26 @@ footer span {
 
 /*MEDIA QUERY*/
 @media screen and (max-width: 1020px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3em;
+  }
+  header a {
+    margin-right: 0;
+    margin-bottom: 0.5em;
+  }
+  .main__title {
+    padding-top: 3em;
+  }
+  .main__welcome h2 {
+    margin-bottom: 1em;
+  }
+  .portfolio__subtitle, .main__formulario h6 {
+    padding: 1em;
+  }
   .main__portfolio__content {
     display: flex;
     flex-direction: column;
