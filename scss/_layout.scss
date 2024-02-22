@@ -127,6 +127,10 @@ section{
     padding-left: 3em;
     border-radius: 10px;
     font-size: 0.8em;
+
+    &:hover{
+        background-color: map-get($colores, light-green-title);
+    }
 }
 
 /*PORTFOLIO*/
