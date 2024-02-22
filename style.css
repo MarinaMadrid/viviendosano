@@ -133,6 +133,7 @@ section {
   padding-left: 3em;
   border-radius: 10px;
   font-size: 0.8em;
+  font-size: 0.8em;
 }
 .button__green:hover {
   background-color: rgb(183, 227, 196);
@@ -275,5 +276,9 @@ footer span {
   }
   .main__formulario__data {
     min-width: 30em;
+  }
+  .button__green {
+    margin-left: 8em;
+    margin-right: 8em;
   }
 }/*# sourceMappingURL=style.css.map */
