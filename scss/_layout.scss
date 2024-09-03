@@ -142,9 +142,14 @@ section{
 }
 
 .main__portfolio__content{
-    @include flexbox(row);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto auto;
+    gap: 1.5em;
     margin-left: 3em;
     margin-right: 3em;
+    justify-items: center;
+    align-items: center;
 
     p{
         font-size: medium;
@@ -154,20 +159,45 @@ section{
     }
 
     article{
+        display: grid;
+        grid-template-rows: 1fr auto auto; 
+        gap: 1em;
+        justify-items: center;
+        text-align: center;
         margin-bottom: 3em;
     }
 
+    figure{
+        grid-row: 1 / 2;
+        text-align: center;
+        width: 25em;
+    }
+
     img {
-        max-width: 17em;
-        max-height: 11em;
-        margin-right: 1em;
-        margin-bottom: 1em;
+        width: 100%;
+        height: auto;
+        display: block;
     }
     
     figcaption{
         font-weight: bolder;
         margin-top: 1em;
         margin-bottom: 1em;
+    }
+
+    .main__portfolio__content__text {
+        grid-row: 2 / 3; 
+        padding: 0 1em;
+        max-width: 35em;
+  
+        p {
+          margin-bottom: 0.5em;
+        }
+      }
+  
+      .button__green {
+        grid-row: 3 / 4; 
+        justify-self: center;
     }
 }
 
