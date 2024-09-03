@@ -190,6 +190,7 @@ section {
 }
 .main__formulario h2 {
   margin-top: 1em;
+  margin-bottom: 1em;
 }
 .main__formulario h6 {
   margin-bottom: 2.5em;
@@ -215,6 +216,9 @@ section {
 .main__touch {
   background-color: rgb(231, 78, 89);
   min-height: 30em;
+}
+.main__touch h2 {
+  margin-bottom: 1em;
 }
 .main__touch p {
   color: rgb(240, 133, 130);

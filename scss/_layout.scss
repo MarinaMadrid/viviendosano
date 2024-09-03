@@ -187,6 +187,7 @@ section{
 
     h2{
         margin-top: 1em;
+        margin-bottom: 1em;
     }
 
     h6{
@@ -219,6 +220,10 @@ section{
 .main__touch{
     background-color: map-get($colores, dark-coral);
     min-height: 30em;
+
+    h2{
+        margin-bottom: 1em;
+    }
 
     p{
         color: map-get($colores, light-coral);
