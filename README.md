@@ -4,4 +4,6 @@ Para realizar esta página me he fijado en el modelo adequately de https://templ
 
 Los textos se han generado con ChatGTP.
 
-Los iconos son de https://www.flaticon.es/
+El icono es de https://www.flaticon.es/
+
+Las imágenes se han generado con la IA Microsoft Bing.
