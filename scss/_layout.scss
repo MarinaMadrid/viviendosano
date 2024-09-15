@@ -53,7 +53,7 @@ header,
     background-color: map-get($colores, green-header);
 }
 
-.first__nav {
+header a:hover {
     background-color: map-get($colores, light-green);
 }
 

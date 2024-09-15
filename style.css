@@ -55,7 +55,7 @@ header,
   background-color: #8DCB89;
 }
 
-.first__nav {
+header a:hover {
   background-color: #6FC06A;
 }
 
