@@ -1,5 +1,5 @@
 /*MEDIA QUERY*/
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1284px) {
     header {
         @include flexbox(column); 
         padding-top: 3em;
@@ -24,7 +24,8 @@
     }
 
     .main__portfolio__content {
-        @include flexbox(column); 
+        grid-template-columns: 1fr 1fr; 
+        gap: 1.5em;
 
         article {
             width: 100%; 
@@ -38,5 +39,27 @@
     .button__green{
         margin-left: 8em;
         margin-right: 8em;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .main__portfolio__content {
+        grid-template-columns: 1fr; 
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .main__portfolio__content {
+        grid-template-columns: 1fr; 
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .main__formulario__data{
+        min-width: 30em;
     }
 }

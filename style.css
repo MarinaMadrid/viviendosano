@@ -142,8 +142,7 @@ section {
 
 /*PORTFOLIO*/
 .main__portfolio {
-  max-height: auto;
-  margin-bottom: 10em;
+  margin-bottom: 3em;
 }
 
 .main__portfolio__content {
@@ -155,25 +154,24 @@ section {
   margin-right: 3em;
   justify-items: center;
   align-items: center;
+  justify-content: center;
 }
 .main__portfolio__content p {
   font-size: medium;
-  line-height: 2em;
   margin-bottom: 3em;
   margin-right: 1em;
 }
 .main__portfolio__content article {
   display: grid;
-  grid-template-rows: 1fr auto auto;
+  grid-template-rows: 1fr 0.5fr auto;
   gap: 1em;
   justify-items: center;
-  text-align: center;
   margin-bottom: 3em;
 }
 .main__portfolio__content figure {
   grid-row: 1/2;
-  text-align: center;
   width: 25em;
+  max-height: 483.81px;
 }
 .main__portfolio__content img {
   width: 100%;
@@ -189,9 +187,6 @@ section {
   grid-row: 2/3;
   padding: 0 1em;
   max-width: 35em;
-}
-.main__portfolio__content .main__portfolio__content__text p {
-  margin-bottom: 0.5em;
 }
 .main__portfolio__content .button__green {
   grid-row: 3/4;
@@ -220,6 +215,12 @@ section {
   margin-bottom: 2.5em;
   letter-spacing: 2px;
   font-size: large;
+}
+.main__formulario ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .main__formulario li {
   list-style-type: none;
@@ -271,7 +272,7 @@ footer span {
 }
 
 /*MEDIA QUERY*/
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1284px) {
   header {
     display: flex;
     flex-direction: column;
@@ -294,10 +295,8 @@ footer span {
     font-size: small;
   }
   .main__portfolio__content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5em;
   }
   .main__portfolio__content article {
     width: 100%;
@@ -308,5 +307,24 @@ footer span {
   .button__green {
     margin-left: 8em;
     margin-right: 8em;
+  }
+}
+@media screen and (max-width: 850px) {
+  .main__portfolio__content {
+    grid-template-columns: 1fr;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+}
+@media screen and (max-width: 850px) {
+  .main__portfolio__content {
+    grid-template-columns: 1fr;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+}
+@media screen and (max-width: 850px) {
+  .main__formulario__data {
+    min-width: 30em;
   }
 }/*# sourceMappingURL=style.css.map */
